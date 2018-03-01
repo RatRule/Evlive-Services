@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Utsav">
+
+
+    <title>Evlive | Get in touch</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span class="navbarLogo">EV</span>
+                    <span class="navbarLogo2">LIVE</span>
+                </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="products.html">OUR PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">GET IN TOUCH</a>
+                    </li>
+                    <li>
+                        <div class="btn-group navbarDropdown">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdownList">
+                                    <a href="apply.html">APPLY AS AN INTERN</a>
+                                </li>
+                                <li class="dropdownList">
+                                    <a href="privacy_policy.html">PRIVACY POLICY</a>
+                                </li>
+                                <li class="dropdownList">
+                                    <a href="tc.html">TERMS &amp; CONDITIONS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- SUBHEADER -->
+    <section id="subheader">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2>BE AN INTERN AT EVLIVE</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="applyFormArea">
+                <h2 class="text-center">Evlive Services Internship Application</h2>
+                <p>Evlive Services is a startup that develops apps and websites for industrial needs as well as for direct users.
+                    Currently, we have clients from all over the country, especially in Android app development.</p>
+                <p>We seek to provide an internship opportunity in product marketing and brand awareness (in Delhi).</p>
+                <p>* Selected intern's day-to-day responsibilities include:</p>
+                <p>1. Strategizing and brainstorming new and unique marketing ideas with team
+                    <br> 2. Marketing mobile apps in colleges and universities across Delhi in different teams
+                    <br> 3. Promoting apps through different social media</p>
+                <p>* Perks:
+                    <br> Cartificate, Letter of Recommendation, Flexible working hours</p>
+                <p>
+                    <span class="redText">* Required</span>
+                </p>
+                <hr>
+                <!-- <div class="dropdown" id="applyDropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                        Apply For
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li>
+                            <a class="btn btn_primary">Marketing Intern</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a class="btn btn_primary">Software Intern</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <select class="form-control " id="internTypeSelect" onchange="if (this.selectedIndex) selectedType();">
+                    <option value="" disabled selected>--Apply As--</option>
+                    <option value="marketing">Marketing Intern</option>
+                    <option value="software">Software Intern</option>
+                </select>
+
+
+                <form id="internForm">
+                    <div class="form-group">
+                        <label>Name <span class="redText">*</span></label>
+                        <input type="text" class="form-control" placeholder="eg: John Smith">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email <span class="redText">*</span></label>
+                        <input type="email" class="form-control" placeholder="eg: johnsmith@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone number <span class="redText">*</span></label>
+                        <input type="tel" class="form-control" placeholder="eg: 9876543210">
+                    </div>
+
+                    <div class="form-group">
+                    <label>Location <span class="redText">*</span></label>
+                    <select class="form-control locationSelect">
+                            <option value="" disabled selected>--Location--</option>
+                            <option value="north_delhi">North Delhi</option>
+                            <option value="west_delhi">West Delhi</option>
+                            <option value="east_delhi">East Delhi</option>
+                            <option value="south_delhi">South Delhi</option>
+                            <option value="central_delhi">Central Delhi</option>
+                            <option value="ncr">NCR</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>    
+                    <div class="form-group">
+                        <label>Gender <span class="redText">*</span></label>
+                        <select class="form-control">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                            <label>Education</label>
+                            <input type="text" class="form-control" placeholder="eg: Bcom 2nd year">
+                    </div>
+                    <hr>
+                    
+
+                    <!-- QUESTIONS AREA     -->
+                    <div id="marketingArea">
+                        <div class="form-group">
+                            <h5><label>Why should you be hired as a marketing intern? <span class="redText">*</span></label></h5>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+
+                        <div class="form-group">
+                                <h5><label>Describe a marketing strategy you have used in your life</label></h5>
+                                <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+
+                        <div class="form-group">
+                                <h5><label>Have you ever worked in a team to make an event a success? If yes explain how you did it.</label></h5>
+                                <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+
+                        <div class="form-group">
+                                <h5><label>How many hours per week can you put in for this internship?</label></h5>
+                                <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                            
+                        <hr>
+                    </div>
+                    
+
+                    <div id="softwareArea">
+                            <div class="form-group">
+                                <h5><label>Why should you be hired as a software intern? <span class="redText">*</span></label></h5>
+                                <input type="text" class="form-control" placeholder="Your Answer">
+                            </div>
+    
+                            <!-- <div class="form-group">
+                                    <h5><label>Describe a marketing strategy you have used in your life</label></h5>
+                                    <input type="text" class="form-control" placeholder="Your Answer">
+                            </div> -->
+    
+                            <div class="form-group">
+                                    <h5><label>Have you ever worked in a team to make an event a success? If yes explain how you did it.</label></h5>
+                                    <input type="text" class="form-control" placeholder="Your Answer">
+                            </div>
+    
+                            <div class="form-group">
+                                    <h5><label>How many hours per week can you put in for this internship?</label></h5>
+                                    <input type="text" class="form-control" placeholder="Your Answer">
+                            </div>
+                                
+                            <hr>
+                        </div>
+                
+
+
+
+
+
+
+                    <div class="form-group">
+                        <label>Upload Your Resume</label>
+                        <input type="file">
+                        <p class="help-block">Only doc and pdf allowed</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-default disabled" id="internFormSubmit">Submit</button>
+                </form>
+
+
+                <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--COMPANY-->
+    <div id="company">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h4>
+                        <span class="primaryText">CONTACT</span> US</h4>
+                    <ul>
+                        <li id="contactPhone">
+                            <i class="fa fa-phone"></i>+91 9910275708</li>
+                        <li id="contactMail">
+                            <i class="fa fa-envelope"></i>info@myevlive.com</li>
+                        <!-- <li><i class="fa fa-map"></i>15 ,Yemen road,Yemen</li> -->
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 " id="about">
+                    <h4>
+                        <span class="primaryText">ABOUT</span> US</h4>
+                    <p id="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam explicabo quas recusandae neque possimus
+                        provident? Illum enim vitae non officia at ipsa eveniet fugiat illo, consequuntur repudiandae velit
+                        placeat minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam explicabo quas recusandae
+                        neque possimus provident? Illum enim vitae non officia at ipsa eveniet fugiat illo, consequuntur
+                        repudiandae velit placeat minima.
+                        <p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p class="text-center footerContent">Copyright &copy; 2018 | Evlive Services pvt limited</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
