@@ -264,6 +264,7 @@ footer{
     color: white;
     background-color:#35424a;
     margin-top: 45px;
+    border-bottom: 4px solid #56a79a;
 }
 
 
@@ -294,6 +295,9 @@ footer{
     margin-bottom: 20px;
 }
 
+
+
+/* APPLY */
 #applyFormArea{
     margin-top:20px;
     background-color: #ebebe0;
@@ -303,7 +307,7 @@ footer{
 }
 
 
-/* APPLY */
+
 #internForm{
     margin-top: 20px;
 }
@@ -315,3 +319,36 @@ footer{
 #softwareArea{
     display:none;
 }
+#internFormSubmit{
+    
+}
+
+
+/* INTERN RECORD */
+
+#internRecordArea{
+    margin-top:80px;
+    background-color: #56a79a;
+    padding:20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.referralField{
+    width:86%;
+}
+
+.internTable{
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+
+#internRecordTable{
+    display: none;
+}
+
+.internRecordBody{
+    /* background:url('../images/internRecordBg.jpeg') no-repeat center center; */
+    background: #ebebe0;
+}  
